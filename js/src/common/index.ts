@@ -1,5 +1,7 @@
-import app from 'flarum/common/app';
+import * as findAndModVdomChild from './utils/findAndModVdomChild';
+import copyTextToClipboard from './utils/copyTextToClipboard';
 
-app.initializers.add('blomstra/extensibility-tools', () => {
-  console.log('[blomstra/extensibility-tools] Hello, forum and admin!');
-});
+export default {
+  'utils/findAndModVdomChild': findAndModVdomChild,
+  'utils/copyTextToClipboard': copyTextToClipboard,
+};
